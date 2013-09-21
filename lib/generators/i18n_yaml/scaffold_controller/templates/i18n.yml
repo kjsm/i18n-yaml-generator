@@ -1,0 +1,7 @@
+<%= locale %>:
+<% i18n_namespacing do -%>
+    index:
+    show:
+    new:
+    edit:
+<% end -%>

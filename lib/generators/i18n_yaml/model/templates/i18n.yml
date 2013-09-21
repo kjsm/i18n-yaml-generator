@@ -1,0 +1,11 @@
+<%= locale %>:
+  <%= orm_i18n_key %>:
+    models:
+      <%= i18n_scope_key %>: <%= human_name %>
+<%- if attributes -%>
+    attributes:
+      <%= i18n_scope_key %>:
+  <%- for attribute in attributes -%>
+        <%= attribute.name %>: <%= attribute.human_name %>
+  <%- end -%>
+<%- end -%>
